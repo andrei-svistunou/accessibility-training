@@ -1,7 +1,103 @@
+a.intext {
+  text-decoration: underline !important;
+}
+
+a {
+  color: #122f5e;
+}
+.button:active, a:focus,button:focus, .button:focus, .file-cta:active, .file-cta:focus, .file-name:active, .file-name:focus, .input:active, .input:focus, .is-active.button, .is-active.file-cta, .is-active.file-name, .is-active.input, .is-active.pagination-ellipsis, .is-active.pagination-link, .is-active.pagination-next, .is-active.pagination-previous, .is-active.textarea, .is-focused.button, .is-focused.file-cta, .is-focused.file-name, .is-focused.input, .is-focused.pagination-ellipsis, .is-focused.pagination-link, .is-focused.pagination-next, .is-focused.pagination-previous, .is-focused.textarea, .pagination-ellipsis:active, .pagination-ellipsis:focus, .pagination-link:active, .pagination-link:focus, .pagination-next:active, .pagination-next:focus, .pagination-previous:active, .pagination-previous:focus, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
+  outline: 2px solid blue;
+}
+
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://unsplash.it/1200/900?random") no-repeat center center fixed;
   background-size: cover;
+}
+
+.tag:not(body).is-danger {
+  background-color: #600b1c;
+}
+
+.tag:not(body).is-success {
+  background-color: darkgreen;
+}
+
+.help.is-danger {
+  color: #600b1c;
+}
+
+iframe {
+  border: 0;
+}
+.tabs li {
+  padding: 1px;
+}
+
+.assistive-text {
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.is-primary {
+  background: #137566 !important;
+}
+
+.button.is-info,
+.hero.is-info {
+  background:#194f73;
+}
+
+.help.is-success {
+  color: #116e32;
+}
+
+.has-text-grey-light {
+  color: #000 !important;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+  color: #194f73;
+}
+
+.subtitle  {
+  color: black;
+}
+.skiptocontent a{
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 8px;
+  background: #00a;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 100;
+}
+
+.skiptocontent a:focus {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline-color: transparent;
+  -webkit-transition: top .1s ease-in;
+  transition: top .1s ease-in;
+  text-decoration: underline;
 }
 
 .tabs {
