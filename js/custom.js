@@ -5,6 +5,15 @@
     burger.classList.toggle("is-active");
     menu.classList.toggle("is-active");
   });
+
+  var notifyBtn = document.querySelector('.subscribe');
+  notifyBtn.addEventListener('click', function() {
+    if (true) {
+      var msg = document.createElement("p");
+      msg.textContent = 'We will inform you!';
+      notifyBtn.closest('.box').appendChild(msg);
+    }
+  })
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
