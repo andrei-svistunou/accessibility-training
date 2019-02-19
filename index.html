@@ -319,32 +319,32 @@
       <div class="hero is-info">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">List of topics</h1>
+            <h1 class="title" id="list-topics">List of topics</h1>
             <h2 class="subtitle">We are always in touch we the outside world</h2>
           </div>
         </div>
         <div class="tabs is-boxed is-centered main-menu" id="nav">
-          <ul role="tablist">
+          <ul role="tablist" aria-describedby="list-topics">
             <li data-target="pane-1" id="1" role="presentation">
-              <button role="tab" aria-controls="pane-1" aria-selected="false" id="pic">
+              <button class="tab" role="tab" aria-controls="pane-1" aria-selected="false" id="pic">
                 <span class="icon is-small"><span class="fa fa-image" aria-hidden="true"></span></span>
                 <span>Pictures</span>
               </button>
             </li>
             <li data-target="pane-2" id="2" class="is-active" role="presentation">
-                <button role="tab" aria-controls="pane-2" aria-selected="true" id="art">
+                <button class="tab" role="tab" aria-controls="pane-2" aria-selected="true" id="art">
                 <span class="icon is-small"><span class="fab fa-empire" aria-hidden="true"></span></span>
                 <span>Article</span>
                 </button>
             </li>
             <li data-target="pane-3" id="3" role="presentation">
-              <button role="tab" aria-controls="pane-3" aria-selected="false" id="team">
+              <button class="tab" role="tab" aria-controls="pane-3" aria-selected="false" id="team">
                 <span class="icon is-small"><span class="fab fa-superpowers" aria-hidden="true"></span></span>
                 <span>Team</span>
               </button
             </li>
             <li data-target="pane-4" id="4" role="presentation">
-                <button role="tab" aria-controls="pane-4" aria-selected="false" id="vid">
+                <button class="tab" role="tab" aria-controls="pane-4" aria-selected="false" id="vid">
                 <span class="icon is-small"><span class="fa fa-film" aria-hidden="true"></span></span>
                 <span>Video</span>
                 </button>
@@ -1348,6 +1348,6 @@
   </template>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-  <script async src="js/custom.js"></script>
+  <script defer src="js/custom.js"></script>
 </body>
 </html>
