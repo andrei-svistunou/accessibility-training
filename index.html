@@ -13,7 +13,14 @@
 
 <body>
   <header class="hero hero-bg is-fullheight">
-    <div class="skiptocontent"><a href="#about">skip to main content</a></div>
+    <div class="skiptocontent" tabindex="0">
+      <div>
+        <a href="#about">skip to main content</a>
+      </div>
+      <!-- <div>
+        <a href="#register">go to register form</a>
+      </div> -->
+    </div>
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
@@ -36,6 +43,14 @@
                     <span aria-hidden="true" class="fa fa-home"></span>
                   </span>
                   <span>Home</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#register">
+                  <span class="icon">
+                    <span aria-hidden="true" class="fa fa-home"></span>
+                  </span>
+                  <span>Register</span>
                 </a>
               </span>
               <span class="navbar-item">
@@ -652,6 +667,89 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section aria-labelledby="register" class="section has-background-light">
+      <div class="container">
+        <div class="section-heading has-text-centered">
+          <h3 class="title is-2" id="register">Register My Тeam</h3>
+        </div>
+
+        <form class="column is-half is-offset-one-quarter box" id="registerForm" name="register form" action="#">
+            
+          <div class="field">
+            <label class="label" for="inp0_">Username</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter Username" aria-invalid="false" aria-required="true" id="inp0_" placeholder="Enter Username">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label" for="inp1_">Name</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter name" aria-invalid="false" aria-required="true" id="inp1_" placeholder="Enter name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="inp2_">Surname</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter Surname" aria-invalid="false" aria-required="true" id="inp2_" placeholder="Enter Surname">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="inp3_">Phone number</label>
+            <div class="control">
+              <input class="input" type="number" aria-placeholder="Enter Phone number" aria-invalid="false" aria-required="true" id="inp3_" placeholder="Enter Phone number">
+            </div>
+          </div>
+
+          <div class="field">
+              <label class="label" for="inp4_">Address</label>
+              <div class="control">
+                <input class="input" type="text" aria-placeholder="Enter Address" aria-invalid="false" aria-required="true" id="inp4_" placeholder="Enter Address">
+              </div>
+            </div>
+
+          <div class="field display-none">
+              <label class="label " for="inp7_">Year of born</label>
+              <div class="control">
+                <input class="input" type="text" aria-placeholder="Enter Year of born" aria-invalid="false" aria-required="false" id="inp7_" placeholder="Enter Year of born">
+              </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="inp5_">Post code</label>
+                <div class="control">
+                  <input class="input" type="text" aria-placeholder="Enter Post code" aria-required="false" id="inp5_" placeholder="Enter Post code">
+                </div>
+              </div>
+              <!-- is-danger -->
+              <div class="field">
+                  <label class="label" for="eml1">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input " id="eml1" aria-placeholder="Enter your email" aria-invalid="false" aria-required="true" type="text" placeholder="Email input" value="">
+                    <span class="icon is-small is-left">
+                      <span class="fas fa-envelope" aria-hidden="true"></span>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <span class="fas fa-exclamation-triangle" aria-hidden="true"></span>
+                    </span>
+                  </div>
+                  <!-- <p class="help is-danger">This email is invalid</p> -->
+                </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" value="Submit">Submit <span class="assistive-text">Register My Тeam</span></button>
+            </div>
+            <div class="control">
+              <button class="button is-text" value="Cancel">Cancel</button>
+            </div>
+          </div>
+        </form>
+        <div id="success" aria-live="polite"></div>
+        <div id="error" aria-live="polite"></div>
       </div>
     </section>
 
